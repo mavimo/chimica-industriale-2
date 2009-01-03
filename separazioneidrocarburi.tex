@@ -1,0 +1,201 @@
+\chapter{Separazione di miscele di idrocarburi}
+I composti idrocarburici a basso peso molecolare ottenuti all'uscita del processo di steam cracking devono essere separati per poter essere utilizzati. La miscela di partenza ha una composizione simile a quella indicati in \tablename~\ref{tab:si:conposizioneSC}. Dati gli ingenti quantitativi di gas da trattare le uniche tecniche adottabili economicamente vantaggiose sono i frazionamenti per mezzo di distillazione o per lavaggio con solventi. 
+\begin{table}[htbp]
+	\centering
+		\begin{tabular}{lc} \hline
+		Prodotto												& contenuto	\\ \hline
+		Idrogeno												& 1-2 \%		\\
+		Metano													& 10-18 \%	\\
+		Etilene													& 20-35 \%	\\
+		Propilene												& 12-18 \%	\\
+		Frazione $C_4$									& 7-13 \%		\\
+		Benzene													& 6-7 \%		\\
+		Frazione $C_5$ e aromatici			& 5-10 \%		\\ \hline
+		\end{tabular} 
+	\caption{Composizione del flusso in uscita dallo Steam Cracking}
+	\label{tab:si:conposizioneSC}
+\end{table}
+
+Il problema maggiore nell'utilizzo del frazionamento per distillazione è dato dalle basse temperature di ebollizione dei composti leggieri e dalla vicinanza delle temperature di ebollizione di alcuni composti (vedi \tablename~\ref{tab:si:caratteristicheCH})
+\begin{table}[htbp]
+	\centering
+		\begin{tabular}{p{3cm}ccc} \hline
+		Composto			& $T_{eb} (^oC)$ & $T_{critica} (^oC)$ & $P_{critica} (Atm)$ \\ \hline
+		\ce{H_2}			&		-252.5			 & 			-239.8				 &			13.2					 \\
+		\ce{N_2}			&		-195.8			 & 			-147.1				 &			33.5					 \\
+		\ce{CO}				&		-191.5			 & 			-140.2				 &			34.5					 \\
+		\ce{CH_4}			&		-161.5			 & 			-82.3					 &			45.8					 \\
+		\ce{C_2H_4}		&		-103.8			 & 			9.7						 &			50.7					 \\
+		\ce{C_2H_6}		&		-88.6				 & 			33.0					 &			48.6					 \\
+		\ce{C_2H_2}		&		-83.6			 	 & 			35.7					 &			81.6					 \\
+		\ce{C_3H_6}		&		-47.7			 	 & 			91.4					 &			45.4					 \\
+		\ce{C_3H_8}		&		-42			 		 & 			95.8					 &			41.6					 \\
+		\ce{iso-C_4H_{10}}&-11.7			 & 			133.8					 &			30.2					 \\
+		\ce{n-C_4H_8}	&		-6.26			 	 & 			144.1					 &			37.5					 \\
+		\ce{n-C_4H_{10}}&	-0.5			 	 & 			152.0					 &			37.5					 \\
+		\ce{1,3 C_4H_6}&	-4.4			 	 & 			163.0					 &			42.1					 \\ \hline
+		\end{tabular}
+	\caption{Caratteristiche fisiche delle frazioni idrocarburiche leggere}
+	\label{tab:si:caratteristicheCH}
+\end{table}
+
+\section{Impianto di frazionamento tramite rettifica}
+Un impianto generico per il frazionamento di questi composti è formato da quattro colonne di rettifica che separano le frazioni \ce{H_2} e \ce{C_1}, \ce{C_2H_4}, \ce{C_2H_6}, \ce{C_3} e come ultima frazione rimanente \ce{C_4} e \ce{C_5}. Lo schema è visibile in \figurename~\ref{fig:si:impiantoFrazionamentHC}.
+
+\begin{figure}[p]
+	\centering
+		\includegraphics[width=0.90\textwidth]{image/impiantoFrazionamentHC}
+	\caption[Impianto di frazionamento degli idrocarburi a basso PM]{Impianto di frazionamento degli idrocarburi a basso PM. \textit{A}: \ce{C_1} e \ce{H_2}; \textit{B}: \ce{C_2H_4}; \textit{C}: \ce{C_2H_6}; \textit{D}: \ce{C_3}; \textit{E}: \ce{C_4} e \ce{C_5};}
+	\label{fig:si:impiantoFrazionamentHC}
+\end{figure}
+
+L'impianto indicato è composta da quattro colonne ed ognuna di esse opera in condizioni tali per cui il refrigerante che deve giungere alla testa della colonna è composto dal fluido di testa della colonna successiva che viene fatto espandere e sottrae il calore necessario a condensare i vapori di testa della colonna di rettifica. Le condizioni operative delle colonne indicate in \figurename~\ref{fig:si:impiantoFrazionamentHC} sono indicate in \tablename~\ref{tab:si:impiantoFrazionamentHC:CondizOperative}
+
+\begin{table}[p]
+	\centering
+		\begin{tabular}{lcccc} \hline
+		Colonna												& C1	&  C2 & C3 & C4 \\ \hline
+		Pressione (Atm)								&	 40	&	 27 & 24 & 15 \\
+		Temperatura di testa ($^oC$))	& -90	&	-18 &  4 & 38 \\
+		Temperatura di coda ($^oC$))	&  38	&	 43 & 65 & 93 \\ \hline
+		\end{tabular}
+	\caption{Condizioni operative dell'impianto di separazione degli idrocarburi a basso PM}
+	\label{tab:si:impiantoFrazionamentHC:CondizOperative}
+\end{table}
+
+I titoli di testa dele colonne \textit{C2} e \textit{C3} non è elevato e si attesta su di un valore del 95\% circa, mentre dalla testa della colonna \textit{C1} si trova, oltre alle specie cercate anche un elevato tenore di etilene.
+
+L'intero impianto non può operare se vengono superate le temperature critiche dei diversi composti nelle diverse colonne, quindi la temperatura di testa della colonna \textit{C1} non può mai superare la temperatura critica del metano ($-90^oC$) altrimenti non si avrebbe condensazione della testa, il riflusso nei piatti di testa sarebbe nullo e la colonna non potrebbe operare come colonna di rettifica. Sarebbe persino possibile abbassare la pressione operativa delle diverse colonne, tuttavia ciò porterebbe ad avere la necessità di operare a temperature ancora inferiori, facendo crescere i costi necessari alla sottrazione del calore; e dato che le condizioni operative sono tali da necessitare di un buon isolamento tutte le colonne sono coibentate e si ha un recupero termico tra le colonne stesse.
+
+Altro problema che sorge (sempre nella colonna \textit{C1}) è dato dalla necessità di far si che le condizioni a fondo colonna non superino le condizioni critiche del propilene, infatti verrebbe pregiudicata la presenza di questo in fase liquida; per questo motivo non è possibile avere pressioni superiori a 40atm e la presenza della fase liquida è molto precaria, poiché piccole variazioni della temperatura portano ad una diversa condensazione e pertanto la regolazione del processo è difficoltosa.
+
+\section{Separazione etano - etilene}
+L'etilene ottenuto dalla prima distillazione si trova ad un grado di purezza tale per cui il suo utilizzo non è consentito, bisogna quindi andare a purificarlo per ottenere una purezza superiore, in modo che possa essere utilizzato.
+
+Data la differenza di temperatura tra le due specie considerate (circa $15^oC$) e la natura del diagramma liquido vapore si può effettuare la separazione tramite una unica colonna di rettifica. In questo caso si opera in modo da avere, come refrigerante di testa l'etilene che viene espanso isoentalpicamente da 6atm a 1atm sottraendo il calore necessario alla condensazione, oppure dell'etano di coda da 15-20atm a 1atm.
+
+In queste condizioni è sufficiente una colonna da 100 piatti e un rapporto di riciclo di 3-4, per avere (considerando una concentrazione di acetilene pressoché nulla, poiché si è effettuata una idrogenazione in modo da eliminarlo) una concentrazione di etilene del 99.9\%, ovvero suffciente a poter essere utilizzato per il processo di polimerizzazione con sistemi Zigler-Natta.
+
+\section{Separazione propano - propilene}
+La separazione della frazione \ce{C_3} viene effettuata separando il propano dal propilene, ma poiché la differenza delle temperature di ebollizione di questi due composti sono molto basse ($5.7^oC$) la volatilità relativa tende al valore unitario e di conseguenza la separazione è abbastanza difficoltosa. Operando ad una pressione di 20atm, in modo che in testa sia possibile utilizzare acqua come refrigerante, è necessario disporre di una colonna di 130piatti teorici per ottenere un purezza dei prodotti superiore al 99\%. 
+
+A pressioni inferiori si potrebbero utilizzare colonne più corte, ma necessiterebbero di usare come refrigerante il propilene liquido. Altro metodo utilizzabile per diminuire le dimensioni della colonna da utilizzare è l'inserimento di un terzo composto polare che abbassi la volatilità relativa del propilene rispetto al propano. Come solventi possono essere utilizzati furfurolo (eventualemente con aggiunta di alcuni punti percentuale di acqua), acrilonitrile, acetonitile o miscele di quest'ultimi.
+
+Il processo più diffuso prevede l'utilizzo di una colonna a 20atm con refrigerante ad acqua e con 120-130piatti. La necessità di utilizzare una colonna di tali dimensioni comporta notevoli problemi di stabilità meccanica del dispositivo, si opta quindi per l'utilizzo di due colonne disposte in serie in modo da avere strutture più compatte e stabili. Un impianto di questo tipo è rappresentato in \figurename~\ref{fig:si:impiantoFrazionamentoC3}
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.70\textwidth]{image/impiantoFrazionamentoC3}
+	\caption{Impianti di separazione propano - propilene}
+	\label{fig:si:impiantoFrazionamentoC3}
+\end{figure}
+
+\section[Separazione della frazione C4]{Separazione della frazione \ce{C_4}}
+Le miscele di \ce{C_4} ottenute da processi quali steam cracking, cracking termico, deidrogenazioni di \textit{n}-butano, etc contengono una miscela dei diversi isomeri e le rispettive olefine (vedi \tablename~\ref{tab:si:isomeriC4}), di conseguenza è necessaria una separazione per poter ottenere le diverse specie utilizzate nelle fasi successive.
+
+\begin{table}[htbp]
+	\centering
+		\begin{tabular}{ccc}
+			$\tetramethylene{}{}$ 					& $\tetramethylene[a]{}{}$ 			& $\tetramethylene[b]{}{}$  \\
+					n-butano	  								& 		1-butene	 								& trans-2-butene						\\
+			$\trimethylene[b]{}{3S==\null}$ & $\trimethylene{}{2S==\null}$ 	& $\trimethylene[b]{}{2S==\null}$	\\
+					cis-2-butene	 							& 		iso-butano	 							& iso-butene								\\
+			                         				& $\tetramethylene[ac]{}{}$ 		&                           \\
+			               									& 		1-3butadiene	 						&		                    		\\
+		\end{tabular}
+	\caption{Isomeri delle specie C4}
+	\label{tab:si:isomeriC4}
+\end{table}
+
+I prodotti principali desiderati sono i \textit{butadieni}, usati per al produzione di elastomeri, l'\textit{isobutene} usato per la produzione di MTBE, l'\textit{1-butene} per la produzione di poliolefine, l'\textit{\textit{n}-butano} e \textit{\textit{n}-butene} per la produzione di anidride maleica.
+
+La separazione tra questi composti è alquanto difficoltosa, poiché le temperatura di ebollizione sono molto vicine e vi è la presenza di alcuni azeotropi di minima (in particolare tra butadiene e \textit{n}-butano), che rendono difficoltosa la separazione tramite semplice rettifica, infatti per la separazione della miscela \ce{1-butene}~/~\ce{cis 2-butene} per ottenere una purezza sufficientemente alta (99\%) è necessario operare con colonne di circa 110 piatti e un rapporto di riflusso pari a 45. Data una media produzione annua di 50000 tonnellate il dimensionamento della colonna porta ad avere un diametro di 1.9m e altezza di circa 90m, da cui il rapporto (detto snellezza) è pari a 47. Cio porta a notevoli problematiche costruttive, ma anche operative, inquanto anche piccole oscillazioni impediscono sulla testa l'orizzontalità dei piatti e di conseguenza l'efficienza. Anche in questo caso è possibile operare usando più colonne in serie (come per il propilene).
+
+\subsection{Distillazione estrattiva}
+Per migliorare la rettifica della miscela iniziale si usano solventi polari, che data la diversa struttura elettronica dei composti olefinici (e di conseguenza la polarità e polarizzabilità), fa si che la volatilità relativa degli idrocarburi insaturi sia minore di quella degli idrocarburi saturi (l'$\alpha$ diventa sufficientemente diversa da 1).
+
+Le caratteristiche che il solvente deve avere sono l'elevata polarità, (con elevata capacità e selettività), in modo da ridurre la velocità di ricircolazione e di conseguenza diminuire le dimensioni delle apparecchiature e i consumi energetici operativi. Una temperatura di ebollizione elevata rispetto al componente estratto in modo da facilitare la fase successiva di separazione dell'estratto; è necessario, inoltre, che possegga una certa stabilità termica per evitare degradazione nei diversi cicli di utilizzo e ovviamente un costo sufficientemente basso da giustificarne l'impiego. Come specie solventi con le caratteristiche richieste sono state individuate alcune specie che sono anche quelle più utilizzate; queste sono indicate in \tablename~\ref{tab:si:solventiDistEstrattiva}.
+\begin{table}[htbp]
+	\centering
+		\begin{tabular}{cc}
+			$\vcenter{\hbox{\fiveheterov[A]{1==O}{2==CHO}}}$ &
+			$\vcenter{\hbox{\fiveheterov[A]{1==N}{1==CH$_3$;2D==O}}}$ \\
+			furfurolo &
+			NPM = N-Metil Pirrolidone	\\
+			$\vcenter{\hbox{\tetramethylene{1==CH$_3$;4==NH$_2$}{2==CH$_3$;3D==O}}}$ &
+			$\vcenter{\hbox{$CH_3-C \equiv N$}}$ \\
+			DMAC = dimetil acetamide &
+			ACN = acetonitrile \\
+		\end{tabular}
+	\caption{Solventi utilizzati nella distillazione estrattiva delle specie \ce{C_4}}
+	\label{tab:si:solventiDistEstrattiva}
+\end{table}
+
+\subsection{Alternative alla rettifica}
+Oltre al meccanismo di rettifica (e rettifica estrattiva) è possibile operare utilizzando dei solventi particolarmente affini a determinate specie, per esempio l'isobutene ha una sua distribuzione delle cariche decisamente differente rispetto ad un n-butano e di conseguenza potrebbe essere possibile trovare un solvente (presumibilmente polare) che è molto più affine verso questa specie.
+
+Potrebbero essere sfruttati anche fenomeni di adsorbimento selettivo sfruttando diversità steriche delle specie considerate e di conseguenza operare con setacci molecolari per la separazione delle diverse sostanze (come per il caso della separazione del \textit{m}-xilene e \textit{p}-xilene). Per esempio la struttura del iso-butano è decisamente differente dal punto di vista degli ingombri sterici dal n-butano.
+
+\subsection{Separazione del butadiene}
+Il processo di separazione delle specie \ce{C_4} viene affrontato iniziando a sottrarre dalla miscela iniziale il butadiene, infatti questa è la specie che potrebbe comportare maggiori problemi nelle fasi successive, poiché date le sue caratteristiche potrebbe portare a polimerizzazione delle code delle diverse colonne di rettifica provocando degradazione del prodotto e danni alle colonne (intasamento). Inoltre è possibile la trasposizione degli idrogeni per portare a prodotti acetilenici (triplo legame) che essendo prodotti particolarmente esplosivi hanno come conseguenza un elevato rischio per le apparecchiature, oltre alla perdita della qualità del prodotto.
+
+La fase successiva prevede la separazione dell'isobutene dalla miscela rimanente, sia per ottenere il prodotto puro che per ottenere altre specie da esso derivato (MTBE).
+
+\subsubsection{Processo Phillips (estrazione con furfurolo)}
+Inizialmente (anni '40) il butadiene veniva estratto tramite un processo di distillazione estrattiva usando come solvente il furfurolo ($T_{eb} = 162^oC$). L'intero processo è composto da tre elementi principali, in una prima colonna di rettifica si ha eliminazione dalla testa, tramite l'immissione del furfurolo, delle specie $C_3$ presenti, dei butani e dei buteni. Un secondo elemento è lo stripper da cui si ha separazione dei gas adsorbiti nel furfurolo dei gas; dalla coda di questo elemento si ottiene furfurolo che dopo un raffreddamento e una fase di purificazione viene reimmesso nella colonna principale, mentre dalla testa si ottiene l'1,3-butadiene e altri buteni che vengono poi separati da una seconda colonna di rettifica. Lo schema di processo è visibile in \figurename~\ref{fig:si:butadienePhillips}.
+\begin{figure}[htbp]
+	\centering
+		\includegraphics[width=0.90\textwidth]{image/butadienePhillips}
+	\caption[Impianto per l'ottenimento di butadiene (processo Phillips)]{Impianto per l'ottenimento di butadiene (processo Phillips). \textit{1}: colonna di rettifica estrattiva; \textit{2}: Stripper; \textit{3}: Colonna di rettifica finale; \textit{4}: raffreddamento del furfurolo; \textit{5}: Purificazione del furfurolo.}
+	\label{fig:si:butadienePhillips}
+\end{figure}
+
+\subsubsection{Processo Shell (estrazione con ACN)}
+Dagli anni '60 si afferma il processo Shell in cui la carica viene dapprima inviata ad una colonna di rettifica estrattiva con solvente a base di ACN\footnote{Acetonitrile.}. Dalla testa si ottiene la miscela di butani e buteni, mentre dalla coda si estrae il solvente contenente l'1,3-butandiene. Questo viene inviato a uno stripper dove si ha separazione del solvente (che verrà riciclato alla prima colonna) e dei gas che contengono alcuni gas leggeri e gli 1,3-butadieni. questa miscela gassosa viene dapprima inviata ad una colonna di rettifica dove si separano i gas leggeri dalla testa, mentre i butadieni (che escono dalla coda) vengono inviati ad una seconda colonna di rettifica dove vengono separati dai composti pesanti che sono presenti.
+
+I composti pesanti, e i gas uscenti dalla testa della prima rettifica vengono inviati ad una colonna per lavaggio con acqua per il recupero del'ACN trascinato, e successivamente escono dall'impianto. La miscela ACN acqua viene invece inviata ad una colonna di rettifica che procede alla separazione dei due componenti, l'ACN torna alla colonna primaria per la rettifica estrattiva, mentre l'acqua viene riciclata alla colonna di lavaggio. Lo schema dell'impianto è visibile in \figurename~\ref{fig:si:butadieneShell}.
+\begin{figure}[p]
+	\centering
+		\includegraphics[angle=90,height=0.93\textheight]{image/butadieneShell}
+	\caption[Impianto per l'ottenimento di butadiene (processo Shell)]{Impianto per l'ottenimento di butadiene (processo Shell).
+	\textit{1}: Colonna di rettifica estrattiva;
+	\textit{2}: Stripper del solvente;
+	\textit{3}: Colonna di rettifica dei leggeri; 
+	\textit{4}: Colonna di rettifica per i butandieni;
+	\textit{5}: Colonna di lavaggio;
+	\textit{6}: Colonna di separazione ANC e Acqua;}
+	\label{fig:si:butadieneShell}
+\end{figure}
+
+\subsubsection{Processo Union Carbide (estrazione con DMAC)}
+Questo processo è molto simile a quello sviluppato dalla Shell e usa come solvente il DMAC\footnote{Dimetil acetamide}. In questo caso vi sono due colonne di rettifica estrattiva e due stripper che lavorano in sequenza seguiti poi da due colonne di rettifica in serie per la separazione dell'1,3-butandiene dal resto dei composti estratti dal solvente.
+
+Il vantaggio di questo processo è dato dalla riduzione di temperatura della distillazione estrattiva, limitando quindi le polimerizzazione del butadiene e le problematiche ad esso connesse.
+
+\subsubsection{Processo BASF (estrazione con NMP)}
+Il processo BASF utilizza il NMP\footnote{N-metil pirrolidone} per l'estrazione del butadiene dagli altri \ce{C_4}, dopo una fase iniziale di riscaldamento degli idrocarburi e dei prodotti di ricilo vengono inviati in una colonna di adsorbimento dove si ha, in controcorrente, un flusso di NMP. Segue poi una zona in cui si ha una smiscelazione e un primo scrubber dove si separano i butandieni dal solvente.
+
+Un secondo stripper, che preleva dal fondo dello smiscelatore la miscela di NMP più ricca di acetileni, separa il sovente che viene riciclato dai gas, che vengono inviati ad una colonna di lavaggio ad acqua e successivamente ad un idrogenatore che trasforma gli alchini in alcheni. La miscela uscente da questo viene reinviata all'alimentazione della prima colonna per poter recuperare gli alcheni così ottenuti.
+
+\subsubsection{Processo ESSO (estrazione con CAA)}
+Il processo Esso sfrutta una soluzione cuproammoniacale. Le olefine formano con questo un complesso labile che può essere facilmente decomposto per semplice riscaldamento, si ha quindi una prima operazione di estrazione usando una colonna dalla cui testa viene inserita la soluzione cuproammoniacale, mentre dalla coda viene alimentato il gas di partenza.
+All'uscita della colonna di estrazione si ottengono butani e buteni dalla testa, mentre la soluzione contenente dieni viene dapprima riscaldata per ottenere la dissociazione del complesso e successivamente inviata ad una serie di colonne di distillazione per il recupero del solvente dai \ce{C_4} insaturi.
+L'intero impianto opera a bassa pressione e permette la separazione anche con piccole percentuali di 1,3-butadiene.
+
+\subsection{Separazione del isobutene}
+La fase successiva alla separazione del butadiene dalla miscela alimentata prevede la separazione dell'isobutene dalla miscela rimanente, sia per ottenere il prodotto puro che per ottenere altre specie da esso derivato (MTBE).
+
+\subsubsection{Separazione con acido solforico}
+Date le particolari caratteristiche elettroniche dell'isobutene questo può essere separato in maniera selettiva dagli altri idrocarburi \ce{C_4} per semplice estrazione con una soluzione di acido solforico al 40-50\%. La reazione è esotermica e viene dunque condotta a una temperatura bassa, in genere tra 20 e $50^oC$. La reazione è la seguente:
+\begin{equation}
+		\vcenter{\hbox{\trimethylene[a]{}{2S==\null}}} + H_2SO_4
+		\stackrel{^{\lambda}}{\rightleftharpoons}
+		\vcenter{\hbox{\trimethylene{}{2S==\null;3W==OSO$_3$H}}}
+\end{equation}
+Una volta effettuato l'assorbimento i due componenti possono essere rigenerati per semplice riscaldamento e successivamente separati mediante lavaggio con acqua. L'acido solforico così ottenuto viene concentrato tramite rettifica e reinviato nella colonna di estrazione.
+
+Purtroppo il processo così congeniato ha degli elevati costi di produzione, infatti è necessario effettuare il riscaldamento del \textit{solfato acido terz-butossido} per ottenere la separazione dei due componenti di partenza, inoltre è necessario riconcentrare l'acido solforico e le apparecchiature devono essere realizzate in acciaio resistente all'acido solforico; infine si hanno anche elevati problemi ambientali, quindi è sempre meno utilizzato come processo per la separazione.
+
+\subsubsection{Processi di separazione moderni}
+Attualmente il processo di separazione più utilizzato è l'esterificazione dell'isobutene a MTBE\footnote{\textit{Metil terzbutil ossido}, prodotto che ha sostituito il piombo tetraetile nelle benzine come antidetonante, quindi molto richiesto dall'industria petrolchimica.} aggiungendo metanolo o la semplice idratazione a dare terzbutanolo che può essere riconvertito, in caso di necessità, a isobutene tramite disidratazione.
+
+Uno impianto che sfrutta queste tecnologie è il processo H\"uls in cui le due tecnologie vengono impiegate entrambe e i prodotti ottenuti vengono scelti in funzione delle richieste del mercato.

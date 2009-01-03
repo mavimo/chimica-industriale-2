@@ -1,0 +1,134 @@
+%\documentclass[12pt,a4paper,twoside,openright,draft]{book}
+\documentclass[12pt,a4paper,twoside,openright]{book}
+
+% Margini delle pagine
+\setlength{\oddsidemargin} 		{2. cm}
+\setlength{\evensidemargin} 	{2. cm}
+\addtolength{\oddsidemargin} 	{-0.4 cm}
+\addtolength{\evensidemargin} {-0.4 cm}
+
+% Interlinea
+\linespread{1.1}
+
+% Rientro della prima riga del paragrafo
+\setlength{\parindent}{0.5cm}
+
+% Pacchetti da utilizzare
+\usepackage[italian]{babel}																		% Sillabazione in italiano
+\usepackage[latin1]{inputenc}																	% Encoding con lettere accentate
+\usepackage{amsmath}																					% Simboli matematici
+\usepackage{graphicx}																					% Figure
+\usepackage{hyperref}																					% Link interni clickabili
+\usepackage{subfigure}																				% Per avere più figure ``unite''
+\usepackage{lscape}																						% Per avere tabelle o figure ruotate
+\usepackage[margin=20pt, font=small, labelfont=bf]{caption}		% La descrizione di figure e tabelle
+\usepackage{fancyhdr}   																			% Per modificare l'header delle pagine
+\usepackage[version=3]{mhchem} 																% Formule chimiche
+\usepackage{methylen,aliphat,carom,hetarom,chemist,epic}			% Formule chimiche
+\usepackage{enumerate}
+
+% ======================= Modifiche per l'header =================================
+% Modifica lo stile della pagina secondo le specifiche del pacchetto fancy
+\pagestyle{fancy}
+
+% Modifica l'header delle pagine secondo lo stile fancy
+\fancyhead{}
+
+% Altezza dell'header
+\renewcommand{\headheight}{15pt}
+
+% Spessore della riga sotto l'header
+\renewcommand{\headrulewidth}{0.4pt}
+
+% Contenuto dell'header
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter\ -\ \emph{#1}}{}}
+\fancyhead[RO,LE]{\leftmark}
+% =================================================================================
+
+% Informazioni che vengono inserite come descrizione del PDF prodotto.
+\hypersetup{
+	pdftitle = {Chimica indistriale II},
+	pdfsubject = {Appunti del corso tenuto da E. Tronconi al Politecnico di Milano},
+	pdfkeywords = {chimica industriale, sintesi, prodotti},
+	pdfauthor = {\textcopyright\ Marco Vito Moscaritolo},
+	pdfcreator = {\LaTeX},
+	pdfproducer = {pdfeTeX-0.\the\pdftexversion\pdftexrevision},
+	bookmarksnumbered = true,
+	bookmarksopen = true,
+}
+
+% Imposta il colore dei link.
+\hypersetup{colorlinks=true,
+						linkcolor=magenta,		% Colore dei link interni al documento
+						anchorcolor=magenta,	% Colore dei link ad ancore
+						citecolor=magenta,		% Colore dei link a fonti bibliografiche
+						filecolor=magenta,		% Colore dei link a file locali
+						menucolor=magenta,		% Colore dei link nel menu di adobe Acrobat Reader
+						urlcolor=magenta,			% Colore dei link a url
+					 }
+
+% Rende bianche le pagine di fine capitolo		
+\makeatletter
+	\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+  	\hbox{}
+    \thispagestyle{empty}
+    \newpage
+    \if@twocolumn\hbox{}\newpage\fi\fi\fi}
+\makeatother
+
+%
+% Argomento 1:
+% Materie prime dell’industria chimica organica. Gas naturale e sue linee produttive. 
+% Metanolo. Acido acetico.
+%
+% Argomento 2: 
+% Petrolio. Processi di raffineria: topping, reforming catalitico, cracking termico e 
+% catalitico, visbreaking, coking, hydrotreating.
+%
+% Argomento 3:
+% Il petrolio come fonte di materie prime per l’industria chimica organica. Olefine da 
+% steam cracking; separazione della frazione C4. Aromatici: separazione aromatici / 
+% alifatici; frazionamento degli aromatici C8.
+% 
+% Argomento 4:
+% Esempi di processi petrolchimici per la produzione di monomeri. Processo bilanciato 
+% per la produzione di VCM da etilene e cloro. Processi per la produzione di anidride
+% maleica da benzene e da butano.
+%
+% Argomento 5:
+% Sintesi industriale di polimeri. Polimerizzazione del VCM a PVC.
+%
+
+% Documento da produrre ================================================
+\begin{document}
+% Frontespizio =========================================================
+  \frontmatter
+		\include{frontespizio}
+
+% Indice ===============================================================
+		\tableofcontents
+		
+% Capitoli =============================================================
+	\mainmatter
+	 \include{introduzione}
+	 \include{metano}
+	 \include{metanolo}
+	 \include{acidoacetico}
+   \include{clorurodivinile}
+	 \include{anidridemaleica}
+	 \include{petrolio}
+	 \include{cracking}
+	 \include{reforming}
+	 \include{separazionebtx}
+	 \include{separazioneidrocarburi}
+	 \include{mtbe}
+
+% Elenco delle figure e delle tabelle ==================================
+	 \listoffigures
+	 \listoftables
+	
+	\appendix
+	 \include{riassunto}
+% Fine docuemnto =======================================================
+\end{document}
+% ======================================================================
